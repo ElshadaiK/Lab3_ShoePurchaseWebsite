@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Purchase Website</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <a  class="navbar-brand" href="index.html">AdShoe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+          
+           </button>
+           <div class="collapse navbar-collapse" id="colNav">
+
+                <ul class="navbar-nav ">
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="./service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                            
+                </ul>
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                                <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="./register.html">Register</a>
+                    </li>
+                            
+                </ul>
+            </div>
+                              
+        </nav> 
+    </header>
+    <main>
+        <div class="signingUp pt-4 pb-5">
+        <div class=" text-center py-4">
+            <h3>Create an Account</h3>     <hr class="border-white col-4">
+            <input 
+                        type="button"  
+                        class="contact-form-btn pointer-event py-2 px-4 border-0 rounded-pill"  
+                        id="RLogin" 
+                        onclick="location.href ='./login.html'"
+                        value="Already have an account?">
+        </div>
+        <section class="container">
+                <form class="contact-form px-2 m-auto overflow-hidden" enctype="text/plain" action="mailto:elshadaikassutegegn@gmail.com" method="POST">
+                    <input  
+                        title="First Name"
+                        data-content=""
+                        data-role="validate"
+                        type="text"
+                        class="contact-form-text mx-0 my-2 py-3 px-4 border-0 w-100" 
+                        id="fName" pattern="[a-zA-Z]{4,8}" placeholder="First Name" required>
+                    <div class="invalid my-2">First name is required. And it should only contain alphabetical characters</div>
+                    
+                    <input  
+                        title="Last Name"
+                        type="text"
+                        class="contact-form-text mx-0 my-2 py-3 px-4 border-0 w-100" 
+                        id="fName" pattern="[a-zA-Z]{4,8}" placeholder="Last Name" required>
+                    <div class="invalid my-2">Last name is required. And it should only contain alphabetical characters</div>
+
+                    <input 
+                        title="Email"
+                        type="email" 
+                        class="contact-form-text mx-0 my-2 py-3 px-4 border-0 w-100"  
+                        id="email" 
+                        placeholder="Your Email" 
+                        required>
+                    <div class="invalid my-2">The email is required. And it maynot include any special characters other than the '.' or '@'</div>
+                    <input type="tel" class="contact-form-text mx-0 mt-2 mb-4 py-3 px-4 border-0 w-100"  id="phone" placeholder="Your Phone">
+                    <input 
+                        title="Password"
+                        type="password" class="contact-form-text mx-0 my-2 py-3 px-4 border-0 w-100"  
+                        id="password"  
+                        pattern='("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})")' 
+                        placeholder="Password" 
+                        required>
+                    <div class="invalid my-2">The password is required. And it  should be minimun 8 characters long, and should contain atleast one uppercase, one lowercase, and one special character</div>
+                    
+                    <input 
+                        title="Password"
+                        data-content=""
+                        data-role="validate"
+                        type="password" 
+                        class="contact-form-text mx-0 my-2 py-3 px-4 border-0 w-100"  
+                        id="Cpassword"  
+                        pattern='("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})")' 
+                        placeholder="Confirm Password" required>
+                    <div class="invalid my-2">Passwords must match</div>
+                    <input 
+                        type="submit"  
+                        class="contact-form-btn float-right pointer-event py-2 px-4 border-0 rounded-pill"  
+                        id="submit" 
+                        value="Sign Up">
+                    
+            
+                </form>
+            </section>
+        </div>
+       
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./assets/js/jquery-3.4.1.js"></script>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+</body>
+</html>

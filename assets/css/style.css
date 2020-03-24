@@ -1,0 +1,56 @@
+.signingUp{
+    background: url('./../images/background.jpeg') no-repeat center;
+    background-size: cover;
+}
+.signingIn{
+    min-height: 100vh;
+    background: url('./../images/background.jpeg') no-repeat center;
+    background-size: cover;
+}
+.signingUp .text-center, .signingIn .text-center{
+    color: #DDD;
+}.contact-form{
+    max-width: 600px;
+}
+.contact-form-text{
+    display: block;
+    background: #111;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+.contact-form-btn{
+    background: #34495e;
+    color: #FFF;
+    transition: 0.5s;
+    
+}
+.contact-form-btn:hover{
+    background: #2980b9;
+}
+.validation-messages{
+  color: #ff8888;
+  font-size: xx-small;
+}
+input:required {
+  border-bottom: 2px solid #c33!important;
+}
+.contact-form-btn:hover{
+    background: #2980b9;
+}
+input:valid + .invalid{
+  visibility: hidden;
+}
+input:invalid +.invalid{
+  visibility: visible;
+}
+input:valid{
+  border-bottom: transparent;
+}
+.invalid{
+  color: #ff8888;
+  font-size: small;
+}
