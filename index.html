@@ -6,6 +6,7 @@
     <title>Shoe Purchase Website</title>
     
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -31,12 +32,12 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item">
-                                <a class="nav-link" href="./login.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="./register.html">Register</a>
-                    </li>
+                    <input 
+                        type="button"  
+                        class="contact-form-btn pointer-event py-2 px-4 border-0 rounded-pill"  
+                        id="RLogin" 
+                        onclick="location.href ='./login.html'"
+                        value="Buy">
                             
                 </ul>
             </div>
@@ -44,7 +45,7 @@
         </nav> 
     </header>
     <main>
-        <div class="container-fluid" >
+        <div class="container-fluid my-4" >
 
         <div class="jumbotron" >
 
@@ -80,9 +81,8 @@
                    </div>
          </div>
          </div>
-         <div id="MySlide" class="carousel slide my-4" data-ride="carousel">
 
-            <div class="carousel-inner text-center">
+            <div class="carousel-inner text-center mt-4">
                             <div class="carousel-item active">
                               <img   src="./assets/images/shoe/shoe0.jpg" >
                             </div>
@@ -121,102 +121,64 @@
 
       
     </main>
-    <!-- Footer -->
-<footer class="page-footer font-small mdb-color pt-4">
 
-    <!-- Footer Links -->
+<footer class="page-footer font-small mdb-color pt-4 bg-dark text-white">
+
     <div class="container text-center text-md-left">
   
-      <!-- Footer links -->
       <div class="row text-center text-md-left mt-3 pb-3">
   
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
+        <div class="col-md-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">AdShoe</h6>
           <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
             consectetur
             adipisicing elit.</p>
         </div>
-        <!-- Grid column -->
-  
+        
         <hr class="w-100 clearfix d-md-none">
   
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-          <p>
-            <a href="#!">MDBootstrap</a>
-          </p>
-          <p>
-            <a href="#!">MDWordPress</a>
-          </p>
-          <p>
-            <a href="#!">BrandFlow</a>
-          </p>
-          <p>
-            <a href="#!">Bootstrap Angular</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="w-100 clearfix d-md-none">
-  
-        <!-- Grid column -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
           <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
           <p>
-            <a href="#!">Your Account</a>
+            <a href="./index.html">Home</a>
           </p>
           <p>
-            <a href="#!">Become an Affiliate</a>
+            <a href="./about.html">About</a>
           </p>
           <p>
-            <a href="#!">Shipping Rates</a>
+            <a href="./service.html">Services</a>
           </p>
           <p>
-            <a href="#!">Help</a>
+            <a href="./login.html">Your Account</a>
           </p>
         </div>
   
-        <!-- Grid column -->
         <hr class="w-100 clearfix d-md-none">
   
-        <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
           <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
           <p>
-            <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            <i class="fas fa-home mr-3"></i> Addis Ababa, Ethiopia</p>
           <p>
             <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
           <p>
-            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <i class="fas fa-phone mr-3"></i> +251 900 00 0000</p>
           <p>
-            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            <i class="fas fa-print mr-3"></i> +251 900 00 0000</p>
         </div>
-        <!-- Grid column -->
   
       </div>
-      <!-- Footer links -->
   
       <hr>
   
-      <!-- Grid row -->
       <div class="row d-flex align-items-center">
   
-        <!-- Grid column -->
-        <div class="col-md-7 col-lg-8">
+        <div class="col-md-12 col-lg-12">
   
-          <!--Copyright-->
-          <p class="text-center text-md-left">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/">
-              <strong> MDBootstrap.com</strong>
-            </a>
+          <p class="text-center">© Elshadai Tegegn 2020
           </p>
   
         </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
         <div class="col-md-5 col-lg-4 ml-lg-0">
   
           <!-- Social buttons -->
@@ -246,144 +208,11 @@
           </div>
   
         </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Grid row -->
-  
     </div>
-    <!-- Footer Links -->
+    </div>
   
   </footer>
-  <!-- Footer -->
-  <!-- Footer -->
-<footer class="page-footer font-small mdb-color lighten-3 pt-4">
 
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
-  
-      <!-- Grid row -->
-      <div class="row">
-  
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
-  
-          <!-- Content -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
-          <p>Here you can use rows and columns to organize your footer content.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
-            esse
-            quasi, veritatis totam voluptas nostrum.</p>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-  
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <p>
-                <a href="#!">PROJECTS</a>
-              </p>
-            </li>
-            <li>
-              <p>
-                <a href="#!">ABOUT US</a>
-              </p>
-            </li>
-            <li>
-              <p>
-                <a href="#!">BLOG</a>
-              </p>
-            </li>
-            <li>
-              <p>
-                <a href="#!">AWARDS</a>
-              </p>
-            </li>
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-  
-          <!-- Contact details -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <p>
-                <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-            </li>
-            <li>
-              <p>
-                <i class="fas fa-envelope mr-3"></i> info@example.com</p>
-            </li>
-            <li>
-              <p>
-                <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            </li>
-            <li>
-              <p>
-                <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-            </li>
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-  
-          <!-- Social buttons -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
-  
-          <!-- Facebook -->
-          <a type="button" class="btn-floating btn-fb">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <!-- Twitter -->
-          <a type="button" class="btn-floating btn-tw">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <!-- Google +-->
-          <a type="button" class="btn-floating btn-gplus">
-            <i class="fab fa-google-plus-g"></i>
-          </a>
-          <!-- Dribbble -->
-          <a type="button" class="btn-floating btn-dribbble">
-            <i class="fab fa-dribbble"></i>
-          </a>
-  
-        </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Grid row -->
-  
-    </div>
-    <!-- Footer Links -->
-  
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
     <script src="./assets/js/jquery-3.4.1.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/bootstrap.js"></script>
