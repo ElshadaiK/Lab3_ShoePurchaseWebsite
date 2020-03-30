@@ -1,19 +1,28 @@
 body{
     background-color: #2e4153;
+    background: url('./../images/background.jpeg') no-repeat center;
+    background-size: cover;
     color: #ccc;
     font-style: Karla;
+}
+.row{
+    margin-top: 3rem;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
 .card, .jumbotron{
     color: #2e4153;
 }
-.signingUp{
-    background: url('./../images/background.jpeg') no-repeat center;
-    background-size: cover;
+.card{
+    margin-bottom: 2rem;
+    border: 0;
+}
+.cart-title{
+    text-decoration: underline;
 }
 .signingIn{
     min-height: 100vh;
-    background: url('./../images/background.jpeg') no-repeat center;
-    background-size: cover;
 }
 .signingUp .text-center, .signingIn .text-center{
     color: #DDD;
@@ -61,4 +70,7 @@ input:valid{
 .invalid{
   color: #ff8888;
   font-size: small;
+}
+#boughtItems{
+    background-color: rgba(115,115,115,0.5);
 }

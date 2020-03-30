@@ -40,7 +40,7 @@
                         type="button"  
                         class="contact-form-btn pointer-event py-2 px-4 border-0 rounded-pill"  
                         id="RLogin" 
-                        onclick="location.href ='./login.html'"
+                        onclick="location.href ='./service.html'"
                         value="Buy">
                             
                 </ul>
@@ -60,7 +60,7 @@
                         value="Do not have an account?">
         </div>
         <section class="container">
-                <form class="contact-form px-2 m-auto overflow-hidden" enctype="text/plain" action="mailto:elshadaikassutegegn@gmail.com" method="POST">
+                <form class="contact-form px-2 m-auto overflow-hidden" action="">
                     <input 
                         title="Email"
                         type="email" 
@@ -73,13 +73,12 @@
                         title="Password"
                         type="password" class="contact-form-text mx-0 my-2 py-3 px-4 border-0 w-100"  
                         id="password"  
-                        pattern='("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})")' 
                         placeholder="Password" 
                         required>
                     <div class="invalid my-2">The password is required. And it  should be minimun 8 characters long, and should contain atleast one uppercase, one lowercase, and one special character</div>
                     <input 
                         type="submit"  class="contact-form-btn float-right pointer-event py-2 px-4 border-0 rounded-pill"  
-                        id="submit" value="Login">
+                        id="login" value="Login" id="login">
             
                 </form>
             </section>
@@ -179,5 +178,6 @@
     <script src="./assets/js/jquery-3.4.1.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/login.js"></script>
 </body>
 </html>
