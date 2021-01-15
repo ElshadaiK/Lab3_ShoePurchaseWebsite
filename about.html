@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Arapey:400,400i|Karla:400,700|Roboto+Mono">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
             <a  class="navbar-brand" href="index.html">AdShoe</a>
@@ -53,46 +53,81 @@
     <div class="container-fluid my-4" >
       
         <div class="row">
-        <div class="col-md-2">
-            <img src="./assets/images/shoe/shoe0.jpg" class="img-thumbnail mb-4" alt="Responsive image">
-        </div>
-        <div class="col-md-8">
-          <div class="jumbotron" >
-            <h4>About Addis Shoe</h4>
-      
-            <p>We Provide various types of shoes around the city , enjoy viewing our website
-             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident at inventore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, ab. Asperiores repellendus doloribus sequi alias eligendi a. Qui exercitationem provident, eum consectetur totam ratione odit explicabo quis officiis natus laborum.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, adipisci.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio natus qui architecto, possimus velit esse maxime incidunt autem quisquam placeat, deserunt doloremque reprehenderit mollitia asperiores.</p>
-          </div> 
-        </div>
-        <div class="col-lg-2 d-none d-lg-block">
-          <h1>FAQ</h1>
-          <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Link with href
-            </a>
+          <div class="col-md-2">
+              <img src="./assets/images/shoe/shoe0.jpg" class="img-thumbnail mb-4" alt="Responsive image">
+          </div>
+          <div class="col-md-8">
+            <div class="jumbotron" >
+              <h4>About Addis Shoe</h4>
+        
+              <p>We Provide various types of shoes around the city , enjoy viewing our website
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident at inventore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, ab. Asperiores repellendus doloribus sequi alias eligendi a. Qui exercitationem provident, eum consectetur totam ratione odit explicabo quis officiis natus laborum.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, adipisci.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio natus qui architecto, possimus velit esse maxime incidunt autem quisquam placeat, deserunt doloremque reprehenderit mollitia asperiores.</p>
+            </div> 
+          </div>
+          <div class="col-lg-2 d-none d-lg-block">
+            <h1>FAQ</h1>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Collapsible Group Item #1
+                    </button>
+                  </h2>
+                </div>
             
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Collapsible Group Item #2
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              
             </div>
           </div>
-        </div>
         </div>
         <section>
           <div class=" text-center py-4 ml-2">
             <h3>Facts about us</h3>     
             <div class="row">
-              <div class="col-md-4"> <div class="border rounded-circle h-100">100+</div>
-              <p class="mx-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, eligendi.</p></div>
-              <div class="col-md-4"><div class="border rounded-circle h-100">20+</div>
-                <p class="mx-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, eligendi.</p>
+              <div class="col-lg-4">
+                <div class="mx-auto bg-light rounded-circle border" style="width: 10rem; height: 10rem;">
+                  <p class="pt-5 text-dark font-weight-bold h1">20+</p>
+                </div>
+                <p class="font-weight-bold pt-3"> Sold 1 Million+</p>
+                <p>Our products have attracted a lot of customers</p>
               </div>
-              <div class="col-md-4"><div class="border rounded-circle h-100">50+</div>
-                <p class="mx-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, eligendi.</p>
+              <div class="col-lg-4">
+                <div class="mx-auto bg-light rounded-circle border" style="width: 10rem; height: 10rem;">
+                  <p class="pt-5 text-dark font-weight-bold h1">20+</p>
+                </div>
+                <p class="font-weight-bold pt-3"> Sold 1 Million+</p>
+                <p>Our products have attracted a lot of customers</p>
               </div>
+              <div class="col-lg-4">
+                <div class="mx-auto bg-light rounded-circle border" style="width: 10rem; height: 10rem;">
+                  <p class="pt-5 text-dark font-weight-bold h1">20+</p>
+                </div>
+                <p class="font-weight-bold pt-3"> Sold 1 Million+</p>
+                <p>Our products have attracted a lot of customers</p>
+              </div>
+              
             </div>
         </div>
         </section>
@@ -100,7 +135,7 @@
           <div class=" text-left py-4 ml-2">
             <h3>Our team</h3>     
             <div class="row">
-              <div class="col-md-4"><img src="./assets/images/shoe/shoe1.jpg" alt="" class="rounded-circle">
+              <div class="col-md-4"><img src="./assets/images/shoe/shoe1.jpg" alt="" class="rounded-circle w-10">
               <p class="mx-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, eligendi.</p></div>
               <div class="col-md-4"><img src="./assets/images/shoe/shoe1.jpg" alt="" class="rounded-circle">
                 <p class="mx-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, eligendi.</p>
@@ -133,48 +168,59 @@
                 </div>
               </div>
         </section>
-        <section class="feedback-form">
-        <div class=" text-center py-4">
-            <h3>Tell us your feedback</h3>     <hr class="border-white col-4">
+        <div class="row">
+          <section class="feedback-form col-lg-8">
+            <div class=" text-center py-4">
+                <h3>Tell us your feedback</h3>     <hr class="border-white col-4">
+            </div>
+            <section class="container">
+                <form class="contact-form px-2 m-auto overflow-hidden" enctype="text/plain" action="mailto:elshadaikassutegegn@gmail.com" method="POST">
+                    
+                    <input 
+                        title="Email"
+                        type="email" 
+                        class="contact-form-text mx-0 my-2 py-3 px-4 border-0 w-100"  
+                        id="email" 
+                        placeholder="Your Email" 
+                        required>
+                    <div class="invalid my-2">The email is required. And it maynot include any special characters other than the '.' or '@'</div>
+                    <input 
+                        title="Years"
+                        type="number" 
+                        class="contact-form-text mx-0 my-2 py-3 px-4 border-0 w-100"  
+                        id="years" 
+                        placeholder="How long have you used AdShoe?" 
+                        required>
+                    
+                    <textarea 
+                        title="Comment"
+                        type="text" 
+                        class="contact-form-text mx-0 my-2 py-3 px-4 border-0 w-100"  
+                        id="comment" 
+                        placeholder="Your comment" 
+                        required></textarea>
+                    <div class="invalid my-2">Your feedback is required</div>
+                    
+                    <input 
+                        type="submit"  
+                        class="contact-form-btn float-right pointer-event py-2 px-4 border-0 rounded-pill"  
+                        id="submit" 
+                        value="Send">
+                    
+            
+                </form>
+            </section>
+          </section>
+          <div col-lg-4>
+          <iframe width="100%" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=5.94886317701372~33.716775073242324&lvl=5&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+          </iframe>
+          <div style="white-space: nowrap; text-align: center; width: 10rem; padding: 6px 0;">
+            <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=5.94886317701372~33.716775073242324&amp;sty=r&amp;lvl=5&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+            <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=5.94886317701372~33.716775073242324&amp;sty=r&amp;lvl=5&amp;rtp=~pos.5.94886317701372_33.716775073242324____&amp;FORM=MBEDLD">Get Directions</a>
         </div>
-        <section class="container">
-            <form class="contact-form px-2 m-auto overflow-hidden" enctype="text/plain" action="mailto:elshadaikassutegegn@gmail.com" method="POST">
-                
-                <input 
-                    title="Email"
-                    type="email" 
-                    class="contact-form-text mx-0 my-2 py-3 px-4 border-0 w-100"  
-                    id="email" 
-                    placeholder="Your Email" 
-                    required>
-                <div class="invalid my-2">The email is required. And it maynot include any special characters other than the '.' or '@'</div>
-                <input 
-                    title="Years"
-                    type="number" 
-                    class="contact-form-text mx-0 my-2 py-3 px-4 border-0 w-100"  
-                    id="years" 
-                    placeholder="How long have you used AdShoe?" 
-                    required>
-                
-                <textarea 
-                    title="Comment"
-                    type="text" 
-                    class="contact-form-text mx-0 my-2 py-3 px-4 border-0 w-100"  
-                    id="comment" 
-                    placeholder="Your comment" 
-                    required></textarea>
-                <div class="invalid my-2">Your feedback is required</div>
-                
-                <input 
-                    type="submit"  
-                    class="contact-form-btn float-right pointer-event py-2 px-4 border-0 rounded-pill"  
-                    id="submit" 
-                    value="Send">
-                
-        
-            </form>
-        </section>
-        </section>
+      </div>
+        </div>
+
     </div>
 
    </main>
